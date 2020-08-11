@@ -1,0 +1,16 @@
+{% extends 'tasks/main.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="tasks">
+        <table>
+            {% for task in tasks %}
+            <tr>
+                <td class="name"><a class="tasklink" href="{% url 'taskinfo' task.id %}">{{task}}</a></td>
+                <td class="completed"><a class="tasklink" href="{% url 'deletetask' task.id %   }" style="color:red;">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}

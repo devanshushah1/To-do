@@ -1,0 +1,25 @@
+{% extends 'tasks/main.html' %}
+
+{% block content%}
+
+<div class="container">
+    <div class="tasks">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+            {% for task in tasks %}
+            <tr>
+                <td class="name"><a class="tasklink" href="{% url 'taskinfo' task.id%}">{{task}}</a></td>
+                <td class="edit">{{task.priority}}</td>
+                <td class="completed">{{task.status}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}

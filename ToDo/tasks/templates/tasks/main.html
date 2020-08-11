@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+    <title>ToDo app</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="title">
+            <h1>Just Do It!</h1>
+        </div>
+
+    </header>
+    <section>
+        <div class="nav">
+            <ul>
+                <li><a class="navlink" href="{% url 'Home' %}" >Pending</a></li>
+                <li><a class="navlink" href="{% url 'completed' %}">Completed</a></li>
+                <li id="create"><a class="navlink" href="{% url 'createtask' %}">Create</a></li>
+            </ul>
+        </div>
+
+    {% block content %}
+
+
+    {% endblock %}
+    </section>
+
+</body>
+</html>

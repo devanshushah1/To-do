@@ -1,0 +1,36 @@
+{% extends 'tasks/main.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="info">
+        <table>
+            <tr>
+                <td class="label">Name:</td>
+                <td>{{task.name}}</td>
+            </tr>
+            <tr>
+                <td class="label">Description:</td>
+                <td>{{task.description}}</td>
+            </tr>
+            <tr>
+                <td class="label">Priority:</td>
+                <td>{{task.priority}}</td>
+            </tr>
+            <tr>
+                <td class="label">Status:</td>
+                <td>{{task.status}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="edit">
+        <a class="edit" href="{% url 'edittask' task.id %}">Edit</a>
+</div>
+
+<div id="delete">
+        <a class="delete" href="{% url 'deletetask' task.id %}">Delete</a>
+</div>
+
+
+{% endblock %}

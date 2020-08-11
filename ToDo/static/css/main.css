@@ -1,0 +1,192 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:#01a9b4;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    letter-spacing: 0.1em;
+}
+#main-header{
+    font-family:"sofia";
+    color:white;
+    text-align:center;
+    font-size:27px;
+    padding-top:20px;
+}
+
+.nav{
+    background-color:black;
+    width:50%;
+    margin:auto;
+    margin-top:20px;
+    padding:15px;
+    box-sizing:border-box;
+    position:relative;
+}
+
+.nav ul{
+    list-style-type:none;
+    color:white;
+}
+    .nav li{
+    display:inline-block;
+}
+
+
+#create{
+    position:absolute;
+    right:15px;
+}
+
+a{
+    padding:20px 15px;
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+a:hover{
+    color:yellow;
+}
+
+.container{
+    background-color:#086972;
+    width:50%;
+    margin:auto;
+    margin-top:20px;
+    position:relative;
+}
+
+.tasks{
+    padding:10px 15px;
+}
+
+
+.edit{
+    width:25%;
+}
+.completed{
+    width:25%;
+}
+.clear{
+    clear:both;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+    margin:0;
+}
+th, td{
+    text-align:left;
+    padding:8px;
+    box-sizing: border-box;
+
+}
+
+tr:nth-child(odd){
+    background-color:#87dfd6;
+}
+tr:nth-child(even){
+    background-color:#fbfd8a;
+}
+
+td.name{
+    width:50%;
+}
+td.edit{
+    width:25%;
+}
+td.completed{
+    width:25%;
+}
+td.label{
+    width:15%;
+    background-color:#eebb4d;
+    padding:15px;
+    margin:5px;
+    box-sizing: border-box;
+}
+td:nth-child(even){
+    background-color:;
+}
+
+a.tasklink:link, a.tasklink:visited{
+    color:black;
+}
+
+a.tasklink:hover{
+    color:white;
+}
+
+a.edit:link, a.edit:visited{
+    background-color:#0A9CD5;
+    padding:7px;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+
+}
+
+a.edit:hover{
+    background-color:#5151F0 ;
+}
+
+a.delete:link, a.delete:visited{
+    background-color:#ED6005;
+    padding:7px;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+}
+
+a.delete:hover{
+    background-color:#FA0303;
+}
+
+
+.edit{
+    margin:auto;
+    margin-top:15px;
+}
+
+.infor{
+    margin:auto;
+    margin-top:15px;
+}
+
+#delete{
+    margin:auto;
+    position:relative;
+    left:560px;
+    bottom:25px;
+}
+
+.cancel{
+    background-color:yellow;
+    text-decoration:none;
+    color:white;
+    padding:3px 10px;
+
+}
+
+a.cancel:link, a.cancel:visited{
+    color:white;
+}
+a.cancel:hover{
+    color:black;
+}
+.confirm{
+    background-color:red;
+    color:white;
+    padding:7px;
+}
+
+a.confirm:link, a.confirm:visited{
+    color:white;
+}
+a.confirm:hover{
+    color:black;
+}
+

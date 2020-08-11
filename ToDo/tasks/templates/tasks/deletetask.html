@@ -1,0 +1,18 @@
+{% extends 'tasks/main.html' %}
+{% block content %}
+<div class="container">
+    <div class="deleteform">
+    <form action="{% url 'deletetask' task.id  %}" method="POST">
+        {% csrf_token %}
+        <a class="cancel" href="{% url 'taskinfo' task.id %}">Cancel</a>
+
+        <input class="confirm" type="submit" name="Confirm">
+    </form>
+</div>
+</div>
+
+
+
+{% endblock %}
+
+
